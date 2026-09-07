@@ -1,0 +1,1102 @@
+[
+  {
+    "id": "bk-001",
+    "name": "Belgian Chocolate Truffle Cake",
+    "tagline": "Silky dark chocolate ganache with moist sponge",
+    "category": "chocolate",
+    "category_name": "Gourmet Chocolate",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "romantic",
+      "celebration"
+    ],
+    "starting_price": 599,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 599,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1099,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1599,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2099,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 684,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Our signature masterpiece. Layers of delicate chocolate sponge drenched in 54% dark Belgian chocolate ganache, finished with hand-rolled artisan truffles. Pure indulgence.",
+    "ingredients": "Belgian Dark Chocolate, Dutch Cocoa, Fresh Dairy Cream, Refined Wheat Flour, Butter, Organic Sugar",
+    "shelf_life": "2-3 days refrigerated at 4\u00b0C-8\u00b0C",
+    "tags": [
+      "Bestseller",
+      "100% Eggless",
+      "Rich Chocolate",
+      "Express Delivery"
+    ]
+  },
+  {
+    "id": "bk-002",
+    "name": "Red Velvet Cream Cheese Cake",
+    "tagline": "Velvety crimson sponge with Philadelphia cream cheese",
+    "category": "love",
+    "category_name": "Love & Romance",
+    "occasions": [
+      "anniversary",
+      "romantic",
+      "birthday",
+      "celebration"
+    ],
+    "starting_price": 649,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 649,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1199,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1749,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2299,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 528,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1616031037011-087265dd477c?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1616031037011-087265dd477c?auto=format&fit=crop&w=900&q=80",
+      "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A timeless romance on a plate. Soft, velvety ruby sponge paired with authentic Philadelphia cream cheese frosting and dusted with delicate red velvet crumb rosettes.",
+    "ingredients": "Philadelphia Cream Cheese, Cocoa, Vanilla Pods, Butter, Organic Flour, Buttermilk",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Bestseller",
+      "100% Eggless",
+      "Romantic Favorite",
+      "Cream Cheese"
+    ]
+  },
+  {
+    "id": "bk-003",
+    "name": "KitKat & Gems Celebration Cake",
+    "tagline": "Crunchy KitKat border with rainbow chocolate Gems",
+    "category": "birthday",
+    "category_name": "Birthday Cakes",
+    "occasions": [
+      "birthday",
+      "kids",
+      "celebration",
+      "just-because"
+    ],
+    "starting_price": 699,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 699,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1299,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1899,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2499,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 437,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "The ultimate crowd-pleaser! Moist chocolate cake wrapped in crunchy Nestle KitKat bars and topped with a vibrant cascade of Cadbury Gems with a festive satin ribbon.",
+    "ingredients": "Nestle KitKat, Cadbury Gems, Cocoa Sponge, Chocolate Ganache, Fresh Cream",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Bestseller",
+      "Kids Favorite",
+      "Birthday Special",
+      "Chocolate"
+    ]
+  },
+  {
+    "id": "bk-004",
+    "name": "Classic Black Forest Cherry Cake",
+    "tagline": "German classic with maraschino cherries and chocolate flakes",
+    "category": "cakes",
+    "category_name": "Cakes",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "celebration"
+    ],
+    "starting_price": 549,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 549,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 999,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1499,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 1949,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 612,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Layers of light chocolate sponge infused with cherry compote, enveloped in freshly whipped cream and covered in rich dark chocolate shavings crowned with cherries.",
+    "ingredients": "Dark Chocolate Shavings, Maraschino Cherries, Whipped Vanilla Cream, Cocoa Sponge",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Classic",
+      "100% Eggless",
+      "All-Time Favorite"
+    ]
+  },
+  {
+    "id": "bk-005",
+    "name": "Fresh Seasonal Fruit Overload Cake",
+    "tagline": "Vanilla sponge loaded with kiwi, dragonfruit, berries & mango",
+    "category": "cakes",
+    "category_name": "Cakes",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "congratulations",
+      "thank-you"
+    ],
+    "starting_price": 629,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 629,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1149,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1699,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2199,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 492,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A vibrant garden of fresh fruits atop delicate vanilla chiffon sponge. Glazed fresh kiwi slices, dragon fruit, sweet apples, juicy oranges, and succulent berries.",
+    "ingredients": "Fresh Seasonal Exotic Fruits, Madagascar Vanilla Sponge, Light Whipped Frosting, Apricot Glaze",
+    "shelf_life": "Consume on delivery day for peak freshness",
+    "tags": [
+      "Bestseller",
+      "Fresh Fruits",
+      "100% Eggless",
+      "Light & Fresh"
+    ]
+  },
+  {
+    "id": "bk-006",
+    "name": "Blueberry Glaze Cheesecake",
+    "tagline": "Creamy baked cheesecake with Canadian wild blueberry coulis",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "romantic",
+      "celebration"
+    ],
+    "starting_price": 749,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 749,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1399,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1999,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 318,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Smooth, rich cream cheese filling on a buttery Graham biscuit crust, crowned with a generous swirl of luscious wild blueberry coulis.",
+    "ingredients": "Authentic Cream Cheese, Wild Blueberries, Graham Cracker Crust, Dairy Cream",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Cheesecake",
+      "100% Eggless",
+      "Gourmet Dessert"
+    ]
+  },
+  {
+    "id": "bk-007",
+    "name": "Royal Alphonso Mango Mousse Cake",
+    "tagline": "Sun-ripened Alphonso mango pulp with light mousse layers",
+    "category": "cakes",
+    "category_name": "Cakes",
+    "occasions": [
+      "birthday",
+      "celebration",
+      "just-because"
+    ],
+    "starting_price": 629,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 629,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1149,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1699,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 287,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Crafted using pure Ratnagiri Alphonso mango pulp folded into cloud-soft white sponge and airy whipped mousse.",
+    "ingredients": "Alphonso Mango Pulp, White Sponge, Dairy Whipped Cream, White Chocolate Accents",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Mango Special",
+      "Eggless",
+      "Seasonal"
+    ]
+  },
+  {
+    "id": "bk-008",
+    "name": "Rose Pistachio Gourmet Cake",
+    "tagline": "Fragrant Kashmiri rose infused sponge with roasted pistachios",
+    "category": "designer",
+    "category_name": "Designer Cakes",
+    "occasions": [
+      "anniversary",
+      "romantic",
+      "celebration",
+      "thank-you"
+    ],
+    "starting_price": 699,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 699,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1299,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1899,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 214,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "An artisanal fusion creation. Delicate pink rose petal infusion layered with roasted Californian pistachio crunch and delicate cardamom cream.",
+    "ingredients": "Kashmiri Rose Extract, Pistachios, Cardamom Cream, Edible Rose Petals, Silver Leaf",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Signature",
+      "Royal Fusion",
+      "Eggless",
+      "Artisan"
+    ]
+  },
+  {
+    "id": "bk-009",
+    "name": "Butterscotch Crunch Caramel Cake",
+    "tagline": "Crunchy praline nougat with buttery brown sugar caramel",
+    "category": "birthday",
+    "category_name": "Birthday Cakes",
+    "occasions": [
+      "birthday",
+      "celebration",
+      "kids"
+    ],
+    "starting_price": 529,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 529,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 949,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1399,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.7,
+    "reviews_count": 391,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Crispy caramelized cashew praline paired with golden butterscotch sponge and silky caramel frosting.",
+    "ingredients": "Cashew Praline, Salted Butter Caramel, Whipped Cream, Vanilla Sponge",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Crunchy",
+      "Caramel",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-010",
+    "name": "Pineapple Paradise Cream Cake",
+    "tagline": "Sweet pineapple chunks in light whipped vanilla frosting",
+    "category": "cakes",
+    "category_name": "Cakes",
+    "occasions": [
+      "birthday",
+      "baby-shower",
+      "thank-you",
+      "celebration"
+    ],
+    "starting_price": 499,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 499,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 899,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1349,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 443,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Light, refreshing, and delicious. Layers of soft vanilla cake filled with diced sweet pineapples and smooth dairy frosting.",
+    "ingredients": "Candied Pineapple Chunks, Pineapple Juice, Vanilla Chiffon, Whipped Frosting",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Classic",
+      "Light",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-011",
+    "name": "Lotus Biscoff Speculoos Drip Cake",
+    "tagline": "Belgian Lotus Biscoff spread with spiced biscuit crumble",
+    "category": "chocolate",
+    "category_name": "Gourmet Chocolate",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "celebration"
+    ],
+    "starting_price": 699,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 699,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1299,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1899,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 342,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Infused with caramelised spiced Belgian Biscoff cookies and spread, with crunchy crumb coating and dripping golden biscuit glaze.",
+    "ingredients": "Original Lotus Biscoff Spread & Cookies, Cream Cheese Frosting, Vanilla Sponge",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Trending",
+      "Biscoff",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-012",
+    "name": "Two-Tier Pastel Pink Rose Celebration Cake",
+    "tagline": "Grand 2-tier luxury centerpiece with handcrafted sugar roses",
+    "category": "designer",
+    "category_name": "Designer Cakes",
+    "occasions": [
+      "anniversary",
+      "birthday",
+      "celebration",
+      "romantic"
+    ],
+    "starting_price": 1999,
+    "weights": [
+      {
+        "weight": "2.0 kg",
+        "price": 1999,
+        "servings": "18-24 Portions"
+      },
+      {
+        "weight": "3.0 kg",
+        "price": 2899,
+        "servings": "28-36 Portions"
+      },
+      {
+        "weight": "4.0 kg",
+        "price": 3799,
+        "servings": "40-50 Portions"
+      }
+    ],
+    "rating": 5.0,
+    "reviews_count": 168,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "An opulent two-tier showstopper. Soft pink watercolor buttercream finish accented with 24K edible gold flakes, delicate handcrafted sugar roses, and personalized calligraphy.",
+    "ingredients": "Belgian Chocolate & Vanilla layers, Swiss Buttercream, Edible Gold Leaf, Sugar Flowers",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Two-Tier",
+      "Luxury Designer",
+      "Anniversary",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-013",
+    "name": "Heart-Shaped Red Velvet Pi\u00f1ata Cake with Hammer",
+    "tagline": "Breakable chocolate shell enclosing red velvet cake & treats",
+    "category": "love",
+    "category_name": "Love & Romance",
+    "occasions": [
+      "anniversary",
+      "romantic",
+      "birthday"
+    ],
+    "starting_price": 899,
+    "weights": [
+      {
+        "weight": "0.75 kg",
+        "price": 899,
+        "servings": "6-8 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1649,
+        "servings": "12-16 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 275,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A thrill to open! Solid white chocolate heart shell accompanied by a wooden mallet. Break the shell to reveal luscious red velvet cake, chocolates, and fairy lights.",
+    "ingredients": "White Chocolate Shell, Red Velvet Core, Ferrero Treats, Wooden Hammer Included",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Pi\u00f1ata",
+      "Interactive",
+      "Wooden Hammer",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-014",
+    "name": "Unicorn Fantasy Kids Rainbow Cake",
+    "tagline": "Whimsical 5-layer pastel rainbow cake with golden unicorn horn",
+    "category": "designer",
+    "category_name": "Designer Cakes",
+    "occasions": [
+      "birthday",
+      "kids",
+      "baby-shower"
+    ],
+    "starting_price": 849,
+    "weights": [
+      {
+        "weight": "1.0 kg",
+        "price": 1399,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1999,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2599,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 198,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Every child's dream! Multi-colored vibrant vanilla sponge layers frosted in marshmallow buttercream with a golden horn and pastel swirl mane.",
+    "ingredients": "Rainbow Vanilla Sponge, Marshmallow Buttercream, Fondant Unicorn Horn",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Kids Favorite",
+      "Rainbow",
+      "Designer"
+    ]
+  },
+  {
+    "id": "bk-015",
+    "name": "Fudgy Walnut Brownie Box (Pack of 4)",
+    "tagline": "Gooey 70% dark chocolate brownies with toasted walnuts",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "just-because",
+      "thank-you",
+      "celebration"
+    ],
+    "starting_price": 299,
+    "weights": [
+      {
+        "weight": "Box of 4",
+        "price": 299,
+        "servings": "4 Pieces"
+      },
+      {
+        "weight": "Box of 8",
+        "price": 549,
+        "servings": "8 Pieces"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 420,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Dense, gooey, crackly-topped fudge brownies packed with premium dark chocolate chunks and lightly toasted Kashmiri walnuts.",
+    "ingredients": "Callebaut 70% Cocoa, Kashmiri Walnuts, Butter, Brown Sugar, Organic Flour",
+    "shelf_life": "5 days room temp / 10 days refrigerated",
+    "tags": [
+      "Brownie Box",
+      "Eggless",
+      "Fudgy Dark"
+    ]
+  },
+  {
+    "id": "bk-016",
+    "name": "Assorted Gourmet Cupcakes (Box of 6)",
+    "tagline": "Vanilla Rose, Choco Lava, Red Velvet & Salted Caramel",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "birthday",
+      "thank-you",
+      "just-because",
+      "baby-shower"
+    ],
+    "starting_price": 399,
+    "weights": [
+      {
+        "weight": "Box of 6",
+        "price": 399,
+        "servings": "6 Cupcakes"
+      },
+      {
+        "weight": "Box of 12",
+        "price": 749,
+        "servings": "12 Cupcakes"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 310,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1587668178277-295251f900ce?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Six distinct flavors handcrafted with buttercream rosettes and delicate toppings. Perfect for sharing or gifting.",
+    "ingredients": "Assorted Sponges, Swiss Buttercream, Fruit Coulis, Sprinkles",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Cupcake Box",
+      "Assorted",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-017",
+    "name": "Red Velvet & Chocolate Jar Cake Duo (Pack of 2)",
+    "tagline": "Layered cake jars packed in reusable glass mason jars",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "just-because",
+      "romantic",
+      "thank-you"
+    ],
+    "starting_price": 279,
+    "weights": [
+      {
+        "weight": "Pack of 2 Jars",
+        "price": 279,
+        "servings": "2 Jars (200ml each)"
+      },
+      {
+        "weight": "Pack of 4 Jars",
+        "price": 529,
+        "servings": "4 Jars (200ml each)"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 560,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1586788680434-30d324b2d46f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Generous alternating layers of moist sponge and silky cream piped into luxury glass jars. Comes with cute mini wooden spoons.",
+    "ingredients": "Chocolate Truffle, Red Velvet Sponge, Cream Cheese, Dark Ganache",
+    "shelf_life": "5 days refrigerated",
+    "tags": [
+      "Jar Cake",
+      "Pocket Sweet",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-018",
+    "name": "Sweet Romance: Red Velvet Cake + 8 Crimson Roses",
+    "tagline": "0.5 kg Red Velvet Cake paired with fresh long-stem red roses",
+    "category": "gifts",
+    "category_name": "Gifts & Combos",
+    "occasions": [
+      "romantic",
+      "anniversary",
+      "birthday"
+    ],
+    "starting_price": 999,
+    "weights": [
+      {
+        "weight": "0.5 kg + 8 Roses",
+        "price": 999,
+        "servings": "Combo Pack"
+      },
+      {
+        "weight": "1.0 kg + 12 Roses",
+        "price": 1599,
+        "servings": "Grand Combo"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 380,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "The ultimate expression of affection. Fresh Dutch red roses wrapped in eco-friendly kraft paper, paired with our bestselling Red Velvet Cream Cheese cake.",
+    "ingredients": "Fresh Dutch Roses, Red Velvet Cake, Satin Ribbon Wrap, Free Greeting Card",
+    "shelf_life": "Cake: 2 days, Flowers: 4-5 days with fresh water",
+    "tags": [
+      "Cake & Flower Combo",
+      "Gift Hamper",
+      "Kanpur Midnight Special"
+    ]
+  },
+  {
+    "id": "bk-019",
+    "name": "Grand Celebration Hamper: Chocolate Truffle + Gourmet Treats",
+    "tagline": "Truffle cake, brownie box, jar cake, scented candle & card",
+    "category": "gifts",
+    "category_name": "Gifts & Combos",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "congratulations",
+      "celebration"
+    ],
+    "starting_price": 1499,
+    "weights": [
+      {
+        "weight": "Complete Luxury Hamper",
+        "price": 1499,
+        "servings": "Complete Gift Set"
+      }
+    ],
+    "rating": 5.0,
+    "reviews_count": 190,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A curated luxury gift box containing 0.5kg Belgian Chocolate Truffle Cake, 2 Fudgy Walnut Brownies, 1 Red Velvet Jar Cake, an artisan soy wax candle, and a handwritten celebration card.",
+    "ingredients": "Artisan Pastries, Soy Wax Candle, Premium Box Packaging",
+    "shelf_life": "Pastries: 3 days",
+    "tags": [
+      "Gift Hamper",
+      "Celebration Box",
+      "All-in-One"
+    ]
+  },
+  {
+    "id": "bk-020",
+    "name": "New York Baked Cheesecake Slice (Set of 2)",
+    "tagline": "Authentic slow-baked dense cheesecake with Madagascar vanilla",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "just-because",
+      "thank-you",
+      "celebration"
+    ],
+    "starting_price": 349,
+    "weights": [
+      {
+        "weight": "2 Slices",
+        "price": 349,
+        "servings": "2 Portions"
+      },
+      {
+        "weight": "4 Slices",
+        "price": 649,
+        "servings": "4 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 230,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1533134242443-d4fd215305ad?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Velvety, dense, classic New York-style baked cheesecake on a golden graham cracker crust. Perfectly balanced richness with subtle citrus undertones.",
+    "ingredients": "Philadelphia Cream Cheese, Graham Cracker, Madagascar Vanilla, Sour Cream",
+    "shelf_life": "4 days refrigerated",
+    "tags": [
+      "New York Classic",
+      "Cheesecake",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-021",
+    "name": "French Hazelnut Opera Pastry Duo",
+    "tagline": "Almond joconde sponge soaked in coffee syrup with ganache",
+    "category": "desserts",
+    "category_name": "Desserts",
+    "occasions": [
+      "romantic",
+      "thank-you",
+      "celebration"
+    ],
+    "starting_price": 329,
+    "weights": [
+      {
+        "weight": "2 Pastries",
+        "price": 329,
+        "servings": "2 Portions"
+      },
+      {
+        "weight": "4 Pastries",
+        "price": 599,
+        "servings": "4 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 185,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A French patisserie masterpiece with six immaculate layers: almond joconde sponge, French coffee buttercream, and dark chocolate ganache glaze.",
+    "ingredients": "Almond Flour, Espresso Extract, Dark Chocolate, Buttercream",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "French Patisserie",
+      "Coffee & Chocolate",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-022",
+    "name": "Strawberry Bliss Cream Cake",
+    "tagline": "Fresh strawberry compote layered with light vanilla cream",
+    "category": "love",
+    "category_name": "Love & Romance",
+    "occasions": [
+      "romantic",
+      "birthday",
+      "anniversary"
+    ],
+    "starting_price": 599,
+    "weights": [
+      {
+        "weight": "0.5 kg",
+        "price": 599,
+        "servings": "4-6 Portions"
+      },
+      {
+        "weight": "1.0 kg",
+        "price": 1099,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1599,
+        "servings": "14-18 Portions"
+      }
+    ],
+    "rating": 4.8,
+    "reviews_count": 320,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1565958011703-44f9829ba187?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Juicy Mahabaleshwar strawberries cooked into a sweet compote, layered between feather-light sponge and pastel pink strawberry cream.",
+    "ingredients": "Mahabaleshwar Strawberries, Vanilla Chiffon, Whipped Strawberry Glaze",
+    "shelf_life": "2 days refrigerated",
+    "tags": [
+      "Strawberry",
+      "Fruit Cake",
+      "Eggless"
+    ]
+  },
+  {
+    "id": "bk-023",
+    "name": "Gourmet French Macaron Gift Box (Box of 8)",
+    "tagline": "Raspberry, Salted Caramel, Pistachio, Belgian Chocolate",
+    "category": "gifts",
+    "category_name": "Gifts & Combos",
+    "occasions": [
+      "romantic",
+      "thank-you",
+      "anniversary",
+      "congratulations"
+    ],
+    "starting_price": 499,
+    "weights": [
+      {
+        "weight": "Box of 8",
+        "price": 499,
+        "servings": "8 Macarons"
+      },
+      {
+        "weight": "Box of 16",
+        "price": 899,
+        "servings": "16 Macarons"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 260,
+    "is_bestseller": true,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1569864358642-9d1684040f43?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "Crispy shells with soft chewy centers filled with rich ganaches. 100% vegetarian almond flour formulation with natural colorings.",
+    "ingredients": "Almond Flour, White Ganache, Fruit Jams, Caramel, Chocolate",
+    "shelf_life": "7 days refrigerated",
+    "tags": [
+      "French Macarons",
+      "Gift Box",
+      "Vegetarian"
+    ]
+  },
+  {
+    "id": "bk-024",
+    "name": "Choco Drip Fault Line Celebration Cake",
+    "tagline": "Trending modern fault line design with gold dust and macarons",
+    "category": "designer",
+    "category_name": "Designer Cakes",
+    "occasions": [
+      "birthday",
+      "anniversary",
+      "celebration"
+    ],
+    "starting_price": 1199,
+    "weights": [
+      {
+        "weight": "1.0 kg",
+        "price": 1199,
+        "servings": "8-12 Portions"
+      },
+      {
+        "weight": "1.5 kg",
+        "price": 1699,
+        "servings": "14-18 Portions"
+      },
+      {
+        "weight": "2.0 kg",
+        "price": 2199,
+        "servings": "18-24 Portions"
+      }
+    ],
+    "rating": 4.9,
+    "reviews_count": 140,
+    "is_bestseller": false,
+    "is_eggless": true,
+    "image": "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80",
+    "gallery": [
+      "https://images.unsplash.com/photo-1535254973040-607b474cb50d?auto=format&fit=crop&w=900&q=80"
+    ],
+    "description": "A striking contemporary cake featuring an exposed chocolate fault line filled with edible pearls and gold foil, topped with chocolate truffles and French macarons.",
+    "ingredients": "Belgian Truffle, Buttercream, Edible Gold, Macarons",
+    "shelf_life": "3 days refrigerated",
+    "tags": [
+      "Fault Line",
+      "Designer",
+      "Eggless"
+    ]
+  }
+]

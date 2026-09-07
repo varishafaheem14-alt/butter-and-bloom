@@ -1,0 +1,57 @@
+[
+  {
+    "id": "rev-01",
+    "name": "Pooja Agarwal",
+    "location": "Swaroop Nagar, Kanpur",
+    "rating": 5,
+    "date": "2 days ago",
+    "product_name": "Belgian Chocolate Truffle Cake",
+    "comment": "Ordered for my husband's birthday at midnight. The 11:45 PM delivery was right on time! The cake was intensely chocolatey, moist, and 100% eggless as requested. Everyone in Swaroop Nagar loved it.",
+    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": "rev-02",
+    "name": "Aditya Verma",
+    "location": "Civil Lines, Kanpur",
+    "rating": 5,
+    "date": "5 days ago",
+    "product_name": "Red Velvet Cream Cheese Cake",
+    "comment": "The authentic cream cheese frosting is unmatched in Kanpur! Soft, luxurious texture and not overwhelmingly sweet. Bakingo has set a new benchmark for bakery quality in our city.",
+    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": "rev-03",
+    "name": "Shreya Srivastava",
+    "location": "Kakadeo, Kanpur",
+    "rating": 5,
+    "date": "1 week ago",
+    "product_name": "Sweet Romance: Red Velvet + Roses Combo",
+    "comment": "Ordered this combo for our anniversary. The red roses were fresh with morning dew and the cake was exquisitely decorated. My partner was thrilled. Super fast 2-hour express delivery!",
+    "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": "rev-04",
+    "name": "Rohit Mehrotra",
+    "location": "Kidwai Nagar, Kanpur",
+    "rating": 5,
+    "date": "1 week ago",
+    "product_name": "KitKat & Gems Celebration Cake",
+    "comment": "My 7-year-old son was jumping with joy! The KitKat bars were crispy and the cake sponge inside was so fresh. Packaging in the sturdy pink Bakingo box kept it in pristine condition.",
+    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  },
+  {
+    "id": "rev-05",
+    "name": "Ananya Shukla",
+    "location": "Kalyanpur, Kanpur",
+    "rating": 5,
+    "date": "2 weeks ago",
+    "product_name": "Blueberry Glaze Cheesecake",
+    "comment": "Finally, a real gourmet baked cheesecake in Kanpur! The wild blueberry glaze has the perfect tart-sweet balance. The delivery rider was very polite and handled the cake with great care.",
+    "avatar": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=150&q=80",
+    "verified": true
+  }
+]

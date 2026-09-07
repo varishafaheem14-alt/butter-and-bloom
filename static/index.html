@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Butter & Bloom | Premium Cakes, Desserts & Celebrations</title>
+  <meta name="description" content="Discover freshly baked cakes, desserts and sweet treats from Butter & Bloom in Kanpur, perfect for birthdays, anniversaries and every special moment." />
+  
+  <!-- OpenGraph / Social Meta Tags -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Butter & Bloom | Premium Cakes & Bakery" />
+  <meta property="og:description" content="Order freshly baked 100% eggless cakes, desserts, and gifts with 2-hour express & midnight delivery in Kanpur." />
+  <meta property="og:image" content="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=1200&q=80" />
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🧁</text></svg>" />
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            pink: {
+              50: '#FDF0F4',
+              100: '#FCE4EC',
+              200: '#FAD4E2',
+              300: '#F8B4CB',
+              400: '#F08AA8',
+              500: '#E86F92',
+              600: '#D84B77',
+              700: '#B8325C',
+              800: '#942247',
+              900: '#66112E',
+            },
+            charcoal: '#2A2428',
+            cream: '#FFF9FB'
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Three.js CDN for 3D Cake Visualizer -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="./static/css/style.css" />
+
+  <!-- Structured Data: Schema.org Bakery -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Bakery",
+    "name": "Butter & Bloom",
+    "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587",
+    "telephone": "088825 53333",
+    "url": "https://www.bakingo.com/cakes/kanpur",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "178/B, Ram Krishna Nagar, Darshan Purwa",
+      "addressLocality": "Kanpur",
+      "addressRegion": "Uttar Pradesh",
+      "postalCode": "208012",
+      "addressCountry": "IN"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": 26.4674,
+      "longitude": 80.3168
+    },
+    "servesCuisine": "Bakery, Cakes, Desserts, Cupcakes, Cheesecakes",
+    "priceRange": "₹₹",
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
+        "opens": "07:00",
+        "closes": "23:59"
+      }
+    ]
+  }
+  </script>
+</head>
+<body class="bg-[#FFFFFF] text-charcoal antialiased">
+
+  <!-- =========================================================================
+       1. 3D CAKE CINEMATIC INTRO SCREEN (Screen State 1)
+       ========================================================================= -->
+  <div id="three-intro-container">
+    <button id="skip-intro-btn" class="skip-intro-btn" title="Skip to Homepage">
+      <span>Skip intro</span>
+      <span class="text-xs">✕</span>
+    </button>
+
+    <!-- Global Canvas for Three.js Cake -->
+    <canvas id="three-canvas-global"></canvas>
+
+    <!-- Step 3 Brand Reveal Overlay Text -->
+    <div id="intro-brand-text" class="intro-brand-text">
+      <p class="intro-subtitle font-editorial">Baked for your sweetest moments ♡</p>
+      <h1 class="intro-title font-serif tracking-widest text-charcoal">BUTTER & BLOOM</h1>
+      <span class="inline-block mt-1 text-[11px] uppercase tracking-widest text-pink-500 font-bold bg-white/80 px-3 py-0.5 rounded-full border border-pink-200">Kanpur Hub</span>
+    </div>
+  </div>
+
+  <!-- =========================================================================
+       2. STICKY HEADER & NAVIGATION BAR
+       ========================================================================= -->
+  <header id="main-header" class="header-sticky">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Wordmark / Logo -->
+        <div class="flex items-center gap-3">
+          <a href="#" class="flex items-center gap-1.5 text-decoration-none group">
+            <span class="font-serif text-2xl sm:text-3xl font-extrabold tracking-wider text-charcoal group-hover:text-pink-600 transition-colors">
+              BUTTER & BLOOM<span class="text-pink-500">.</span>
+            </span>
+          </a>
+          <div class="hidden sm:flex items-center gap-1 text-[11px] font-bold text-pink-700 bg-pink-50 border border-pink-200 px-2.5 py-1 rounded-full">
+            <span>📍</span>
+            <span>Kanpur • 208012</span>
+          </div>
+        </div>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7">
+          <a href="#" class="nav-link active">Home</a>
+          <a href="#bestsellers" class="nav-link">Cakes</a>
+          <a href="#occasions" class="nav-link">Occasions</a>
+          <a href="#desserts" class="nav-link">Desserts</a>
+          <a href="#gifts" class="nav-link">Gifts</a>
+          <a href="#custom-studio" class="nav-link">Custom Studio 🎀</a>
+          <a href="#kanpur-hub" class="nav-link">Kanpur Hub</a>
+        </nav>
+
+        <!-- Right Utilities & CTA -->
+        <div class="flex items-center gap-2.5 sm:gap-4">
+          <!-- Search Trigger -->
+          <button class="open-search-trigger p-2 text-gray-600 hover:text-pink-600 hover:bg-pink-50 rounded-full transition-all" title="Search Cakes (Cmd+K)">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </button>
+
+          <!-- Wishlist Trigger -->
+          <button class="open-wishlist-trigger relative p-2 text-gray-600 hover:text-pink-600 hover:bg-pink-50 rounded-full transition-all" title="Wishlist">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path>
+            </svg>
+          </button>
+
+          <!-- Cart Drawer Trigger -->
+          <button class="open-cart-trigger relative p-2 text-gray-700 hover:text-pink-600 hover:bg-pink-50 rounded-full transition-all" title="View Cart">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span class="cart-count-badge absolute -top-1 -right-1 bg-pink-600 text-white text-[10px] font-bold w-4 h-4 rounded-full flex items-center justify-center shadow-sm" style="display: none;">0</span>
+          </button>
+
+          <!-- Order Now CTA -->
+          <a href="#bestsellers" class="hidden sm:inline-flex btn-primary-pink text-xs uppercase tracking-wider font-bold py-2.5 px-4 shadow-sm">
+            Order Now 🎀
+          </a>
+
+          <!-- Mobile Hamburger Menu Button -->
+          <button id="mobile-menu-toggle-btn" class="md:hidden p-2 text-gray-700 hover:text-pink-600 focus:outline-none">
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-nav-drawer" class="hidden md:hidden bg-white border-b border-pink-100 px-4 pt-2 pb-6 space-y-3 shadow-lg">
+      <div class="flex justify-between items-center pb-2 border-b border-pink-50">
+        <span class="text-xs font-bold text-pink-700 uppercase tracking-wider">Navigation Menu</span>
+        <button id="close-mobile-nav-btn" class="text-gray-400 hover:text-gray-700 text-sm p-1">✕</button>
+      </div>
+      <a href="#" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Home</a>
+      <a href="#bestsellers" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Cakes & Bestsellers</a>
+      <a href="#occasions" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Occasions</a>
+      <a href="#desserts" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Desserts & Brownies</a>
+      <a href="#gifts" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Gifts & Combos</a>
+      <a href="#custom-studio" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Custom Cake Studio 🎀</a>
+      <a href="#kanpur-hub" class="mobile-nav-link block text-sm font-semibold text-gray-800 py-1">Kanpur Store Details</a>
+      <div class="pt-2 border-t border-pink-50 flex justify-between items-center">
+        <button class="open-tracker-trigger text-xs font-bold text-pink-600 py-1">Track Live Order 🚀</button>
+        <button class="replay-3d-intro-btn text-xs text-gray-500 hover:text-pink-600">Replay 3D Cake 🧁</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- =========================================================================
+       3. HERO SECTION (With seamlessly integrated 3D Cake Canvas)
+       ========================================================================= -->
+  <section class="relative pt-6 pb-16 overflow-hidden bg-gradient-to-b from-white via-pink-50/30 to-white">
+    <!-- Subtle Decorative Background Elements -->
+    <div class="absolute top-10 left-8 text-pink-200 text-3xl select-none pointer-events-none opacity-60">♡</div>
+    <div class="absolute bottom-16 left-1/4 text-pink-200 text-2xl select-none pointer-events-none opacity-40">✦</div>
+    <div class="absolute top-20 right-12 text-pink-200 text-3xl select-none pointer-events-none opacity-50">🌸</div>
+    <div class="absolute top-1/2 right-1/3 text-pink-200 text-2xl select-none pointer-events-none opacity-40">🎀</div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        
+        <!-- Left Editorial Copy -->
+        <div class="lg:col-span-6 space-y-6 text-left">
+          <!-- Kanpur Express Badge -->
+          <div class="inline-flex items-center gap-2 bg-pink-100/80 border border-pink-200 text-pink-800 px-3.5 py-1.5 rounded-full text-xs font-bold shadow-xs">
+            <span>🎀</span>
+            <span>Freshly Baked in Kanpur • 2-Hour Express Delivery</span>
+          </div>
+
+          <!-- Editorial Headline -->
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-gray-900 leading-[1.15] tracking-tight">
+            Made with Love, <br />
+            <span class="italic font-normal text-pink-600 font-editorial">Baked for Your Moments ♡</span>
+          </h1>
+
+          <!-- Supporting Text -->
+          <p class="text-base sm:text-lg text-gray-600 max-w-lg leading-relaxed font-sans">
+            Handcrafted artisan cakes, gourmet desserts and sweet surprises crafted for every celebration across Kanpur.
+          </p>
+
+          <!-- CTAs -->
+          <div class="flex flex-wrap gap-4 pt-2">
+            <a href="#bestsellers" class="btn-primary-pink text-sm uppercase tracking-wider font-bold py-3.5 px-7">
+              Explore Cakes 🎂
+            </a>
+            <a href="#custom-studio" class="btn-secondary-white text-sm font-semibold py-3.5 px-6">
+              Order Something Sweet 🎀
+            </a>
+          </div>
+
+          <!-- Trust Proof Badges -->
+          <div class="pt-4 border-t border-pink-100 flex flex-wrap gap-6 text-xs text-gray-600">
+            <div class="flex items-center gap-1.5 font-medium">
+              <span class="text-emerald-600 text-sm">✓</span>
+              <span>100% Pure Veg Options</span>
+            </div>
+            <div class="flex items-center gap-1.5 font-medium">
+              <span class="text-pink-600 text-sm">🌙</span>
+              <span>Midnight 12 AM Delivery</span>
+            </div>
+            <div class="flex items-center gap-1.5 font-medium">
+              <span class="text-amber-500 text-sm">★</span>
+              <span>4.9 Rating (2,400+ Kanpur Reviews)</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right 3D Cake Canvas Slot (Seamless Hero Integration) -->
+        <div class="lg:col-span-6">
+          <div class="hero-3d-wrapper relative group">
+            <!-- 3D Canvas Slot Mount -->
+            <div id="hero-cake-canvas-slot" class="w-full h-full"></div>
+            
+            <!-- Subtle Interactive Hint Overlay -->
+            <div class="absolute bottom-4 right-4 bg-white/85 backdrop-blur-md border border-pink-200 text-[11px] text-pink-700 font-semibold px-3 py-1.5 rounded-full shadow-sm pointer-events-none flex items-center gap-1.5">
+              <span>↻</span>
+              <span>Drag to rotate 3D cake</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       4. QUICK CATEGORY NAVIGATION SECTION
+       ========================================================================= -->
+  <section class="py-12 bg-white border-y border-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center mb-8">
+        <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Delightful Selections</span>
+        <h2 class="font-serif text-2xl sm:text-3xl font-bold text-gray-900">What are we baking for you? ♡</h2>
+      </div>
+
+      <!-- Quick Category Grid -->
+      <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 gap-3.5">
+        <a href="#bestsellers" class="category-card quick-category-tab active" data-category="all">
+          <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=200&q=80" alt="All Cakes" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🎂 All Cakes</span>
+        </a>
+        <a href="#bestsellers" class="category-card quick-category-tab" data-category="birthday">
+          <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=200&q=80" alt="Birthday" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🎉 Birthday</span>
+        </a>
+        <a href="#bestsellers" class="category-card quick-category-tab" data-category="love">
+          <img src="https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=200&q=80" alt="Anniversary" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">💍 Anniversary</span>
+        </a>
+        <a href="#bestsellers" class="category-card quick-category-tab" data-category="love">
+          <img src="https://images.unsplash.com/photo-1616031037011-087265dd477c?auto=format&fit=crop&w=200&q=80" alt="Love" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">❤️ Love</span>
+        </a>
+        <a href="#desserts" class="category-card quick-category-tab" data-category="desserts">
+          <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=200&q=80" alt="Desserts" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🍰 Desserts</span>
+        </a>
+        <a href="#gifts" class="category-card quick-category-tab" data-category="gifts">
+          <img src="https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=200&q=80" alt="Gifts" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🎁 Gifts</span>
+        </a>
+        <a href="#bestsellers" class="category-card quick-category-tab" data-category="chocolate">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=200&q=80" alt="Chocolate" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🍫 Chocolate</span>
+        </a>
+        <a href="#bestsellers" class="category-card quick-category-tab" data-category="designer">
+          <img src="https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=200&q=80" alt="Designer" class="category-card-img" />
+          <span class="text-xs font-bold text-gray-800">🌸 Designer</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       5. BESTSELLERS SECTION ("Our Sweetest Bestsellers ♡")
+       ========================================================================= -->
+  <section id="bestsellers" class="py-16 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-10 gap-4">
+        <div>
+          <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Loved at First Bite</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Our Sweetest Bestsellers ♡</h2>
+          <p class="text-sm text-gray-500 mt-1 max-w-md">Our most-loved creations baked fresh for every celebration in Kanpur.</p>
+        </div>
+        
+        <!-- Live Search Shortcut -->
+        <button class="open-search-trigger inline-flex items-center gap-2 text-xs font-semibold text-pink-700 bg-white border border-pink-200 px-4 py-2 rounded-full shadow-sm hover:border-pink-500 transition-all self-start sm:self-auto">
+          <span>🔍</span>
+          <span>Search 24+ Cakes & Flavors</span>
+        </button>
+      </div>
+
+      <!-- Products Grid -->
+      <div id="bestsellers-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       6. OCCASIONS SECTION ("A Cake for Every Story")
+       ========================================================================= -->
+  <section id="occasions" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Milestones & Memories</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">A Cake for Every Story</h2>
+        <p class="text-sm text-gray-500 mt-1">Whether it is a grand milestone or a sweet midnight surprise, we craft memories.</p>
+      </div>
+
+      <!-- Occasion Filter Chips -->
+      <div class="flex flex-wrap justify-center gap-2 mb-10">
+        <button class="occasion-filter-chip bg-pink-600 text-white border border-pink-600 text-xs font-bold px-4 py-2 rounded-full transition-all" data-occasion="all">
+          ✨ All Stories
+        </button>
+        <button class="occasion-filter-chip bg-white text-gray-700 border border-pink-200 text-xs font-bold px-4 py-2 rounded-full hover:border-pink-500 transition-all" data-occasion="birthday">
+          🎂 Birthday
+        </button>
+        <button class="occasion-filter-chip bg-white text-gray-700 border border-pink-200 text-xs font-bold px-4 py-2 rounded-full hover:border-pink-500 transition-all" data-occasion="anniversary">
+          💍 Anniversary
+        </button>
+        <button class="occasion-filter-chip bg-white text-gray-700 border border-pink-200 text-xs font-bold px-4 py-2 rounded-full hover:border-pink-500 transition-all" data-occasion="romantic">
+          ❤️ Romantic
+        </button>
+        <button class="occasion-filter-chip bg-white text-gray-700 border border-pink-200 text-xs font-bold px-4 py-2 rounded-full hover:border-pink-500 transition-all" data-occasion="kids">
+          👶 Kids Special
+        </button>
+        <button class="occasion-filter-chip bg-white text-gray-700 border border-pink-200 text-xs font-bold px-4 py-2 rounded-full hover:border-pink-500 transition-all" data-occasion="thank-you">
+          💌 Thank You
+        </button>
+      </div>
+
+      <!-- Filtered Occasions Grid -->
+      <div id="occasions-products-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       7. CUSTOM CAKE STUDIO SECTION ("Have a Sweet Idea?")
+       ========================================================================= -->
+  <section id="custom-studio" class="py-16 bg-gradient-to-br from-pink-50 via-pink-100/40 to-pink-50 border-y border-pink-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-6 sm:p-10 border border-pink-200 shadow-xl">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Left Visualizer Canvas -->
+          <div class="lg:col-span-6 flex flex-col items-center">
+            <div class="w-full">
+              <div class="cake-studio-canvas">
+                <canvas id="cake-studio-visualizer"></canvas>
+              </div>
+              <p class="text-center text-[11px] text-pink-600 font-semibold mt-2.5">
+                ✦ Real-time Designer Preview with Custom Inscription ✦
+              </p>
+            </div>
+          </div>
+
+          <!-- Right Studio Controls -->
+          <div class="lg:col-span-6 space-y-5">
+            <div>
+              <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Custom Designer Studio</span>
+              <h3 class="font-serif text-3xl font-bold text-gray-900">Have a Sweet Idea? 🎀</h3>
+              <p class="text-xs text-gray-600 mt-1">Let us turn your celebration vision into an edible masterpiece in Kanpur.</p>
+            </div>
+
+            <!-- Tier Selector -->
+            <div>
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-1.5">1. Select Tier & Scale:</label>
+              <div class="grid grid-cols-3 gap-2">
+                <button class="tier-select-btn active border border-pink-500 bg-pink-50 text-xs font-bold py-2 rounded-xl text-gray-800" data-tier="1-tier">
+                  Single Tier (1 kg)
+                </button>
+                <button class="tier-select-btn border border-gray-200 text-xs font-bold py-2 rounded-xl text-gray-800 hover:border-pink-300" data-tier="2-tier">
+                  Grand 2-Tier (2 kg)
+                </button>
+                <button class="tier-select-btn border border-gray-200 text-xs font-bold py-2 rounded-xl text-gray-800 hover:border-pink-300" data-tier="bento">
+                  Petite Bento (0.5 kg)
+                </button>
+              </div>
+            </div>
+
+            <!-- Flavor Selector -->
+            <div>
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-1.5">2. Choose Core Sponge & Filling:</label>
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-2">
+                <button class="flavor-select-btn active border border-pink-500 bg-pink-50 text-xs font-medium py-1.5 px-2 rounded-xl text-left" data-flavor="chocolate" data-name="Belgian Dark Truffle">
+                  🍫 Belgian Truffle
+                </button>
+                <button class="flavor-select-btn border border-gray-200 text-xs font-medium py-1.5 px-2 rounded-xl text-left hover:border-pink-300" data-flavor="red-velvet" data-name="Red Velvet Cream Cheese">
+                  ❤️ Red Velvet
+                </button>
+                <button class="flavor-select-btn border border-gray-200 text-xs font-medium py-1.5 px-2 rounded-xl text-left hover:border-pink-300" data-flavor="rose-pistachio" data-name="Rose Pistachio Royal">
+                  🌸 Rose Pistachio
+                </button>
+              </div>
+            </div>
+
+            <!-- Frosting Palette -->
+            <div>
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-1.5">3. Buttercream Frosting Palette:</label>
+              <div class="flex items-center gap-3">
+                <button class="frosting-color-btn w-7 h-7 rounded-full bg-[#FAD4E2] border border-pink-300 ring-4 ring-pink-300" data-color="#FAD4E2" data-secondary="#FFFFFF" title="Pastel Blush"></button>
+                <button class="frosting-color-btn w-7 h-7 rounded-full bg-[#FFFFFF] border border-gray-300" data-color="#FFFFFF" data-secondary="#FCE4EC" title="Pure Ivory"></button>
+                <button class="frosting-color-btn w-7 h-7 rounded-full bg-[#D84B77] border border-pink-700" data-color="#D84B77" data-secondary="#FFFFFF" title="Rose Pink"></button>
+                <button class="frosting-color-btn w-7 h-7 rounded-full bg-[#2C1810] border border-gray-700" data-color="#2C1810" data-secondary="#D4AF37" title="Belgian Chocolate Ganache"></button>
+              </div>
+            </div>
+
+            <!-- Custom Message -->
+            <div>
+              <label class="text-xs font-bold text-gray-700 uppercase tracking-wider block mb-1.5">4. Custom Inscription on Cake Board:</label>
+              <input type="text" id="custom-cake-msg-input" value="Happy Celebration ♡" maxlength="28" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500 bg-pink-50/30" />
+            </div>
+
+            <!-- Price & Actions -->
+            <div class="pt-3 border-t border-pink-100 flex items-center justify-between">
+              <div>
+                <span class="text-[10px] text-gray-400 block uppercase font-semibold">Estimated Price</span>
+                <span id="custom-cake-price-display" class="font-serif text-2xl font-bold text-pink-600">₹899</span>
+              </div>
+              <button id="add-custom-cake-to-cart" class="btn-primary-pink text-xs uppercase tracking-wider font-bold py-3 px-6 shadow-md">
+                Add Custom Cake 🎀
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       8. DESSERTS SECTION (Brownies, Cupcakes, Jar Cakes, Cheesecakes)
+       ========================================================================= -->
+  <section id="desserts" class="py-16 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-8 gap-4">
+        <div>
+          <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Little Bites of Joy</span>
+          <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Gourmet Desserts & Treats</h2>
+          <p class="text-sm text-gray-500 mt-1">Fudgy walnut brownies, layered jar cakes, and French patisserie slices.</p>
+        </div>
+      </div>
+
+      <!-- Desserts Grid -->
+      <div id="desserts-scroll-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       9. GIFTS & HAMPERS SECTION
+       ========================================================================= -->
+  <section id="gifts" class="py-16 bg-cream border-t border-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Celebration Combinations</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Send a Little Happiness 🎁</h2>
+        <p class="text-sm text-gray-500 mt-1">Curated gift boxes, fresh Dutch flowers, and sweet celebration hampers delivered across Kanpur.</p>
+      </div>
+
+      <!-- Gifts Grid -->
+      <div id="gifts-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       10. THE BAKINGO DIFFERENCE (Signature Experience)
+       ========================================================================= -->
+  <section class="py-16 bg-white border-y border-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Our Philosophy</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Why You'll Love Butter & Bloom ♡</h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div class="text-center p-6 rounded-2xl bg-pink-50/40 border border-pink-100 hover:border-pink-300 transition-all">
+          <div class="w-14 h-14 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl mx-auto mb-4">
+            👩‍🍳
+          </div>
+          <h4 class="font-serif font-bold text-lg text-gray-900 mb-1.5">Freshly Baked on Order</h4>
+          <p class="text-xs text-gray-500 leading-relaxed">Never stored overnight. Every cake is baked fresh right after your order is confirmed.</p>
+        </div>
+
+        <div class="text-center p-6 rounded-2xl bg-pink-50/40 border border-pink-100 hover:border-pink-300 transition-all">
+          <div class="w-14 h-14 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center text-2xl mx-auto mb-4">
+            🌱
+          </div>
+          <h4 class="font-serif font-bold text-lg text-gray-900 mb-1.5">100% Pure Veg Options</h4>
+          <p class="text-xs text-gray-500 leading-relaxed">Certified eggless bakery lines crafted with premium plant-based emulsifiers.</p>
+        </div>
+
+        <div class="text-center p-6 rounded-2xl bg-pink-50/40 border border-pink-100 hover:border-pink-300 transition-all">
+          <div class="w-14 h-14 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl mx-auto mb-4">
+            🍫
+          </div>
+          <h4 class="font-serif font-bold text-lg text-gray-900 mb-1.5">Real Belgian Chocolate</h4>
+          <p class="text-xs text-gray-500 leading-relaxed">Authentic Callebaut cocoa, fresh dairy creams, and pure fruit reductions without artificial syrup.</p>
+        </div>
+
+        <div class="text-center p-6 rounded-2xl bg-pink-50/40 border border-pink-100 hover:border-pink-300 transition-all">
+          <div class="w-14 h-14 rounded-full bg-pink-100 text-pink-600 flex items-center justify-center text-2xl mx-auto mb-4">
+            🚀
+          </div>
+          <h4 class="font-serif font-bold text-lg text-gray-900 mb-1.5">Delivered with Care in Kanpur</h4>
+          <p class="text-xs text-gray-500 leading-relaxed">Specialized shock-proof pink gift packaging and temperature-controlled rider fleet.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       11. KANPUR LOCATION & PINCODE HUB SECTION
+       ========================================================================= -->
+  <section id="kanpur-hub" class="py-16 bg-cream">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="bg-white rounded-3xl p-8 sm:p-12 border border-pink-200 shadow-sm">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <!-- Store Location Information -->
+          <div class="lg:col-span-7 space-y-4">
+            <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block">Local Bakery Hub</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Sweet Things, Baked in Kanpur ♡</h2>
+            
+            <div class="bg-pink-50/60 p-4 rounded-2xl border border-pink-100 text-xs space-y-2 text-gray-700">
+              <div class="flex items-start gap-2.5">
+                <span class="text-pink-600 text-base">📍</span>
+                <div>
+                  <p class="font-bold text-gray-900">Bakingo Kitchen & Dispatch Hub</p>
+                  <p>178/B, Ram Krishna Nagar, Darshan Purwa, Kanpur, Uttar Pradesh 208012</p>
+                </div>
+              </div>
+              <div class="flex items-center gap-2.5 pt-2 border-t border-pink-100">
+                <span class="text-pink-600 text-base">📞</span>
+                <div>
+                  <p class="font-bold text-gray-900">Direct Customer Helpline</p>
+                  <p class="font-mono text-pink-700 font-semibold">088825 53333</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="pt-2">
+              <a href="https://maps.google.com/?q=178/B,+Ram+Krishna+Nagar,+Darshan+Purwa,+Kanpur,+Uttar+Pradesh+208012" target="_blank" rel="noopener noreferrer" class="btn-primary-pink text-xs uppercase tracking-wider font-bold py-2.5 px-5 shadow-xs">
+                Get Directions 🗺️
+              </a>
+            </div>
+          </div>
+
+          <!-- Pincode Route Checker -->
+          <div class="lg:col-span-5 bg-pink-50/40 p-6 rounded-2xl border border-pink-200">
+            <h4 class="font-serif font-bold text-lg text-gray-900 mb-1">Check Kanpur Delivery Time</h4>
+            <p class="text-xs text-gray-500 mb-3">Serving Swaroop Nagar, Civil Lines, Kakadeo, Kalyanpur, Kidwai Nagar, Govind Nagar, and all 208xxx zones.</p>
+
+            <div class="flex gap-2">
+              <input type="text" id="kanpur-hub-pincode-input" placeholder="Enter Pincode (e.g. 208001)" maxlength="6" class="flex-1 text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 bg-white focus:outline-none focus:border-pink-500" />
+              <button id="kanpur-hub-pincode-btn" class="btn-primary-pink text-xs py-2.5 px-4">
+                Check 🎀
+              </button>
+            </div>
+            <div id="kanpur-hub-pincode-result"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       12. KANPUR CUSTOMER REVIEWS
+       ========================================================================= -->
+  <section class="py-16 bg-white border-t border-pink-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-10">
+        <span class="text-xs font-bold text-pink-600 uppercase tracking-widest block mb-1">Happy Kanpur Moments</span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-gray-900">Loved Across Kanpur ♡</h2>
+        <p class="text-sm text-gray-500 mt-1">Real reviews from our sweet celebrations in Civil Lines, Swaroop Nagar, Kakadeo and beyond.</p>
+      </div>
+
+      <div id="kanpur-reviews-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       13. STRUCTURED FOOTER
+       ========================================================================= -->
+  <footer class="bg-charcoal text-white pt-16 pb-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-gray-800">
+        
+        <!-- Brand Info -->
+        <div class="lg:col-span-2 space-y-4">
+          <span class="font-serif text-3xl font-extrabold tracking-wider text-white">
+            BUTTER & BLOOM<span class="text-pink-500">.</span>
+          </span>
+          <p class="text-xs text-gray-400 max-w-sm leading-relaxed">
+            Freshly baked cakes, gourmet desserts, and celebration hampers crafted with love. Delivering joy across Kanpur with 2-hour express and midnight delivery.
+          </p>
+          <div class="text-xs text-gray-400 space-y-1">
+            <p><strong>Kanpur Kitchen Hub:</strong> 178/B, Ram Krishna Nagar, Darshan Purwa, Kanpur, UP 208012</p>
+            <p><strong>Direct Helpline:</strong> <a href="tel:08882553333" class="text-pink-400 hover:underline">088825 53333</a></p>
+          </div>
+        </div>
+
+        <!-- Shop Links -->
+        <div class="space-y-2.5 text-xs text-gray-400">
+          <h5 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Shop Sweet</h5>
+          <p><a href="#bestsellers" class="hover:text-pink-400 transition-colors">Chocolate Truffle Cakes</a></p>
+          <p><a href="#bestsellers" class="hover:text-pink-400 transition-colors">Red Velvet Cream Cheese</a></p>
+          <p><a href="#bestsellers" class="hover:text-pink-400 transition-colors">KitKat & Gems Cakes</a></p>
+          <p><a href="#desserts" class="hover:text-pink-400 transition-colors">Fudgy Walnut Brownies</a></p>
+          <p><a href="#custom-studio" class="hover:text-pink-400 transition-colors">Designer Tier Cakes</a></p>
+        </div>
+
+        <!-- Occasions Links -->
+        <div class="space-y-2.5 text-xs text-gray-400">
+          <h5 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Occasions</h5>
+          <p><a href="#occasions" class="hover:text-pink-400 transition-colors">Birthday Surprises</a></p>
+          <p><a href="#occasions" class="hover:text-pink-400 transition-colors">Anniversary Celebrations</a></p>
+          <p><a href="#occasions" class="hover:text-pink-400 transition-colors">Romantic Moments</a></p>
+          <p><a href="#occasions" class="hover:text-pink-400 transition-colors">Kids Theme Cakes</a></p>
+          <p><a href="#gifts" class="hover:text-pink-400 transition-colors">Cake & Roses Combos</a></p>
+        </div>
+
+        <!-- Experience & Tracking -->
+        <div class="space-y-2.5 text-xs text-gray-400">
+          <h5 class="font-bold text-white uppercase tracking-wider text-xs mb-3">Quick Support</h5>
+          <p><button class="open-tracker-trigger hover:text-pink-400 text-left transition-colors">Live Order Tracker 🚀</button></p>
+          <p><a href="#kanpur-hub" class="hover:text-pink-400 transition-colors">Kanpur Pincode Checker</a></p>
+          <p><button class="replay-3d-intro-btn hover:text-pink-400 text-left transition-colors">Watch 3D Cake Intro 🧁</button></p>
+          <p><a href="https://www.bakingo.com/cakes/kanpur" target="_blank" rel="noopener noreferrer" class="hover:text-pink-400 transition-colors">Official Reference Site</a></p>
+        </div>
+
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-4">
+        <p>© 2026 Butter & Bloom. All rights reserved. Baked fresh for moments worth celebrating ♡</p>
+        <div class="flex gap-4">
+          <span class="text-pink-400">Pure Veg Certified</span>
+          <span>•</span>
+          <span>Contact: 088825 53333</span>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================================================================
+       14. MODALS & DRAWERS
+       ========================================================================= -->
+
+  <!-- A. Slide-over Cart Drawer -->
+  <div id="cart-drawer-backdrop" class="drawer-backdrop">
+    <div class="drawer-panel">
+      <!-- Drawer Header -->
+      <div class="p-4 border-b border-pink-100 flex items-center justify-between bg-pink-50/50">
+        <div class="flex items-center gap-2">
+          <span class="text-lg">🛍️</span>
+          <h4 class="font-serif font-bold text-gray-900 text-base">Your Sweet Basket</h4>
+        </div>
+        <button class="close-cart-trigger text-gray-400 hover:text-gray-700 text-sm p-1">✕</button>
+      </div>
+
+      <!-- Items List -->
+      <div id="cart-items-list" class="flex-1 overflow-y-auto p-4 space-y-2">
+        <!-- Rendered dynamically by cart.js -->
+      </div>
+
+      <!-- Drawer Footer & Checkout -->
+      <div class="p-4 border-t border-pink-100 bg-cream space-y-3">
+        <!-- Promo Code Box -->
+        <div class="flex gap-2">
+          <input type="text" id="cart-coupon-input" placeholder="Promo Code (e.g. FIRSTBITE)" class="flex-1 text-xs px-3 py-2 rounded-xl border border-pink-200 uppercase bg-white focus:outline-none focus:border-pink-500" />
+          <button id="apply-coupon-btn" class="btn-primary-pink text-xs py-2 px-3 shadow-none">Apply</button>
+        </div>
+        <div id="coupon-msg-feedback" class="text-[11px]"></div>
+
+        <!-- Bill Breakdown -->
+        <div class="space-y-1 text-xs text-gray-600 pt-1">
+          <div class="flex justify-between">
+            <span>Subtotal</span>
+            <span id="cart-subtotal-val" class="font-semibold text-gray-900">₹0</span>
+          </div>
+          <div class="flex justify-between">
+            <span>Kanpur Delivery</span>
+            <span id="cart-delivery-val" class="font-semibold text-gray-900">FREE</span>
+          </div>
+          <div class="flex justify-between text-emerald-600">
+            <span>Coupon Discount</span>
+            <span id="cart-discount-val" class="font-semibold">₹0</span>
+          </div>
+          <div class="flex justify-between text-sm font-bold text-gray-900 pt-2 border-t border-pink-200">
+            <span>Total Payable</span>
+            <span id="cart-total-val" class="text-pink-600">₹0</span>
+          </div>
+        </div>
+
+        <button id="proceed-to-checkout-btn" class="w-full btn-primary-pink text-xs uppercase tracking-wider font-bold py-3.5 shadow-md">
+          Proceed to Checkout 🎀
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <!-- B. Product Details Modal -->
+  <div id="product-detail-modal-overlay" class="modal-overlay">
+    <div class="modal-container">
+      <button class="close-product-modal absolute top-4 right-4 z-10 w-8 h-8 rounded-full bg-white/90 border border-pink-200 text-gray-500 hover:text-pink-600 flex items-center justify-center text-sm shadow-sm">
+        ✕
+      </button>
+      <div id="product-detail-modal-body">
+        <!-- Rendered dynamically by app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- C. Multi-Step Checkout Modal -->
+  <div id="checkout-modal-overlay" class="modal-overlay">
+    <div class="modal-container p-6 sm:p-8 max-w-2xl">
+      <button class="close-checkout-modal absolute top-4 right-4 w-8 h-8 rounded-full bg-white border border-pink-200 text-gray-500 hover:text-pink-600 flex items-center justify-center text-sm shadow-sm">
+        ✕
+      </button>
+
+      <!-- Form View -->
+      <div id="checkout-form-steps">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="text-xl">🎀</span>
+          <h3 class="font-serif text-2xl font-bold text-gray-900">Complete Your Sweet Order</h3>
+        </div>
+
+        <div id="checkout-order-summary-box"></div>
+
+        <form id="bakingo-checkout-form" class="space-y-4">
+          <!-- Step 1: Customer & Address -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+            <div>
+              <label class="text-xs font-bold text-gray-700 block mb-1">Recipient Name *</label>
+              <input type="text" id="checkout-name" required placeholder="e.g. Priya Sharma" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500" />
+            </div>
+            <div>
+              <label class="text-xs font-bold text-gray-700 block mb-1">Kanpur Phone Number *</label>
+              <input type="tel" id="checkout-phone" required placeholder="e.g. 9839012345" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500" />
+            </div>
+          </div>
+
+          <div>
+            <label class="text-xs font-bold text-gray-700 block mb-1">Kanpur Delivery Address *</label>
+            <input type="text" id="checkout-address" required placeholder="House/Flat No, Landmark, Area (e.g. 14/82, Civil Lines)" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500" />
+          </div>
+
+          <!-- Pincode Check -->
+          <div>
+            <label class="text-xs font-bold text-gray-700 block mb-1">Kanpur Pincode *</label>
+            <div class="flex gap-2">
+              <input type="text" id="checkout-pincode-input" value="208012" maxlength="6" class="flex-1 text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500" />
+              <button type="button" id="checkout-verify-pin-btn" class="btn-secondary-white text-xs py-2 px-4 shadow-none">
+                Verify Hub
+              </button>
+            </div>
+            <div id="checkout-pin-status" class="text-[11px] mt-1"></div>
+          </div>
+
+          <!-- Step 2: Message on Cake -->
+          <div>
+            <label class="text-xs font-bold text-gray-700 block mb-1">Complimentary Message on Cake / Card</label>
+            <input type="text" id="checkout-cake-message" placeholder="e.g. Happy 1st Anniversary Love ♡" maxlength="35" class="w-full text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 focus:outline-none focus:border-pink-500 bg-pink-50/20" />
+          </div>
+
+          <!-- Step 3: Payment Method Simulator -->
+          <div>
+            <label class="text-xs font-bold text-gray-700 block mb-2">Payment Method</label>
+            <div class="grid grid-cols-2 sm:grid-cols-4 gap-2">
+              <label class="border border-pink-500 bg-pink-50/70 p-2 rounded-xl flex items-center gap-1.5 cursor-pointer text-xs font-semibold">
+                <input type="radio" name="checkout_payment" value="UPI" checked />
+                <span>UPI / GPay</span>
+              </label>
+              <label class="border border-pink-200 p-2 rounded-xl flex items-center gap-1.5 cursor-pointer text-xs font-semibold hover:border-pink-400">
+                <input type="radio" name="checkout_payment" value="Card" />
+                <span>Cards</span>
+              </label>
+              <label class="border border-pink-200 p-2 rounded-xl flex items-center gap-1.5 cursor-pointer text-xs font-semibold hover:border-pink-400">
+                <input type="radio" name="checkout_payment" value="NetBanking" />
+                <span>NetBanking</span>
+              </label>
+              <label class="border border-pink-200 p-2 rounded-xl flex items-center gap-1.5 cursor-pointer text-xs font-semibold hover:border-pink-400">
+                <input type="radio" name="checkout_payment" value="COD" />
+                <span>Pay on Delivery</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="pt-3">
+            <button type="submit" id="submit-order-btn" class="w-full btn-primary-pink text-xs uppercase tracking-wider font-bold py-3.5 shadow-md">
+              Pay & Confirm Order 🎀
+            </button>
+          </div>
+        </form>
+      </div>
+
+      <!-- Confirmation Screen Slot -->
+      <div id="checkout-confirmation-view" style="display: none;"></div>
+    </div>
+  </div>
+
+  <!-- D. Live Order Tracker Modal -->
+  <div id="tracker-modal-overlay" class="modal-overlay">
+    <div class="modal-container p-6 sm:p-8 max-w-lg">
+      <button class="close-tracker-modal absolute top-4 right-4 w-8 h-8 rounded-full bg-white border border-pink-200 text-gray-500 hover:text-pink-600 flex items-center justify-center text-sm shadow-sm">
+        ✕
+      </button>
+
+      <div class="flex items-center gap-2 mb-2">
+        <span class="text-xl">🛵</span>
+        <h3 class="font-serif text-2xl font-bold text-gray-900">Track Kanpur Order Live</h3>
+      </div>
+      <p class="text-xs text-gray-500 mb-4">Enter your Bakingo Order Tracking ID to see live kitchen & rider progress.</p>
+
+      <div class="flex gap-2 mb-4">
+        <input type="text" id="tracker-order-id-input" placeholder="e.g. BK-KNP-8492" class="flex-1 text-xs px-3.5 py-2.5 rounded-xl border border-pink-200 uppercase font-mono bg-pink-50/20 focus:outline-none focus:border-pink-500" />
+        <button id="tracker-search-btn" class="btn-primary-pink text-xs py-2.5 px-5">Track 🚀</button>
+      </div>
+
+      <div id="tracker-result-container"></div>
+    </div>
+  </div>
+
+  <!-- E. Wishlist Modal -->
+  <div id="wishlist-modal-overlay" class="modal-overlay">
+    <div class="modal-container p-6 sm:p-8 max-w-lg">
+      <button class="close-wishlist-modal absolute top-4 right-4 w-8 h-8 rounded-full bg-white border border-pink-200 text-gray-500 hover:text-pink-600 flex items-center justify-center text-sm shadow-sm">
+        ✕
+      </button>
+
+      <div class="flex items-center gap-2 mb-4">
+        <span class="text-xl text-pink-600">♡</span>
+        <h3 class="font-serif text-2xl font-bold text-gray-900">Your Saved Wishlist</h3>
+      </div>
+
+      <div id="wishlist-items-container" class="space-y-2 max-h-80 overflow-y-auto pr-1">
+        <!-- Rendered dynamically -->
+      </div>
+    </div>
+  </div>
+
+  <!-- F. Live Search Modal -->
+  <div id="search-modal-overlay" class="modal-overlay">
+    <div class="modal-container p-6 sm:p-8 max-w-2xl">
+      <button class="close-search-modal absolute top-4 right-4 w-8 h-8 rounded-full bg-white border border-pink-200 text-gray-500 hover:text-pink-600 flex items-center justify-center text-sm shadow-sm">
+        ✕
+      </button>
+
+      <div class="mb-4">
+        <label class="text-xs font-bold text-gray-700 block mb-1.5 uppercase tracking-wider">Search Kanpur Bakery</label>
+        <div class="relative">
+          <input type="text" id="live-search-input" placeholder="Type 'chocolate', 'red velvet', 'birthday', 'cheesecake'..." class="w-full text-sm px-4 py-3 pl-10 rounded-2xl border border-pink-300 focus:outline-none focus:border-pink-500 bg-pink-50/20" />
+          <span class="absolute left-3.5 top-3.5 text-gray-400 text-sm">🔍</span>
+        </div>
+      </div>
+
+      <!-- Quick Search Tags -->
+      <div class="flex flex-wrap gap-1.5 mb-4">
+        <button class="search-quick-tag text-[11px] bg-pink-50 hover:bg-pink-100 text-pink-700 px-2.5 py-1 rounded-full font-medium" data-query="chocolate">🍫 Chocolate Truffle</button>
+        <button class="search-quick-tag text-[11px] bg-pink-50 hover:bg-pink-100 text-pink-700 px-2.5 py-1 rounded-full font-medium" data-query="red velvet">❤️ Red Velvet</button>
+        <button class="search-quick-tag text-[11px] bg-pink-50 hover:bg-pink-100 text-pink-700 px-2.5 py-1 rounded-full font-medium" data-query="birthday">🎉 Birthday Cakes</button>
+        <button class="search-quick-tag text-[11px] bg-pink-50 hover:bg-pink-100 text-pink-700 px-2.5 py-1 rounded-full font-medium" data-query="cheesecake">🍰 Cheesecakes</button>
+        <button class="search-quick-tag text-[11px] bg-pink-50 hover:bg-pink-100 text-pink-700 px-2.5 py-1 rounded-full font-medium" data-query="brownie">🍫 Brownies</button>
+      </div>
+
+      <div id="live-search-results">
+        <div class="py-6 text-center text-xs text-gray-400">
+          Type to search all cakes, desserts, and gifts in Kanpur...
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- G. Toast Notification Container -->
+  <div id="toast-container"></div>
+
+  <!-- =========================================================================
+       15. MOBILE STICKY BOTTOM NAVIGATION BAR
+       ========================================================================= -->
+  <div class="mobile-bottom-bar">
+    <a href="#" class="flex flex-col items-center text-gray-600 hover:text-pink-600 text-[10px] font-semibold">
+      <span class="text-base">🏠</span>
+      <span>Home</span>
+    </a>
+    <a href="#bestsellers" class="flex flex-col items-center text-gray-600 hover:text-pink-600 text-[10px] font-semibold">
+      <span class="text-base">🎂</span>
+      <span>Cakes</span>
+    </a>
+    <button class="open-search-trigger flex flex-col items-center text-gray-600 hover:text-pink-600 text-[10px] font-semibold">
+      <span class="text-base">🔍</span>
+      <span>Search</span>
+    </button>
+    <button class="open-wishlist-trigger flex flex-col items-center text-gray-600 hover:text-pink-600 text-[10px] font-semibold">
+      <span class="text-base">♡</span>
+      <span>Wishlist</span>
+    </button>
+    <button class="open-cart-trigger relative flex flex-col items-center text-gray-700 hover:text-pink-600 text-[10px] font-semibold">
+      <span class="text-base">🛍️</span>
+      <span>Basket</span>
+      <span class="cart-count-badge absolute -top-1 -right-2 bg-pink-600 text-white text-[9px] font-bold w-3.5 h-3.5 rounded-full flex items-center justify-center" style="display: none;">0</span>
+    </button>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="./static/js/api.js"></script>
+  <script src="./static/js/state.js"></script>
+  <script src="./static/js/three-cake.js"></script>
+  <script src="./static/js/cake-builder.js"></script>
+  <script src="./static/js/cart.js"></script>
+  <script src="./static/js/checkout.js"></script>
+  <script src="./static/js/tracker.js"></script>
+  <script src="./static/js/search.js"></script>
+  <script src="./static/js/app.js"></script>
+</body>
+</html>

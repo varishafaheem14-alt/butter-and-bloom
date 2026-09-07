@@ -1,0 +1,242 @@
+{
+  "categories": [
+    {
+      "id": "cakes",
+      "name": "Cakes",
+      "tagline": "Freshly baked artisan cakes",
+      "icon": "\ud83c\udf82",
+      "image": "https://images.unsplash.com/photo-1578985545062-69928b1d9587?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "birthday",
+      "name": "Birthday Cakes",
+      "tagline": "Make birthdays unforgettable",
+      "icon": "\ud83c\udf89",
+      "image": "https://images.unsplash.com/photo-1535141192574-5d4897c13136?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "anniversary",
+      "name": "Anniversary",
+      "tagline": "Celebrate timeless love",
+      "icon": "\ud83d\udc8d",
+      "image": "https://images.unsplash.com/photo-1588195538326-c5b1e9f80a1b?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "love",
+      "name": "Love & Romance",
+      "tagline": "Sweet gestures for someone special",
+      "icon": "\u2764\ufe0f",
+      "image": "https://images.unsplash.com/photo-1616031037011-087265dd477c?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "designer",
+      "name": "Designer Cakes",
+      "tagline": "Handcrafted luxury centerpieces",
+      "icon": "\ud83c\udf38",
+      "image": "https://images.unsplash.com/photo-1563729784474-d77dbb933a9e?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "desserts",
+      "name": "Desserts",
+      "tagline": "Jar cakes, brownies & pastries",
+      "icon": "\ud83c\udf70",
+      "image": "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "gifts",
+      "name": "Gifts & Combos",
+      "tagline": "Hampers, flowers & sweet boxes",
+      "icon": "\ud83c\udf81",
+      "image": "https://images.unsplash.com/photo-1513201099705-a9746e1e201f?auto=format&fit=crop&w=600&q=80"
+    },
+    {
+      "id": "chocolate",
+      "name": "Gourmet Chocolate",
+      "tagline": "Rich Belgian & dark truffles",
+      "icon": "\ud83c\udf6b",
+      "image": "https://images.unsplash.com/photo-1606313564200-e75d5e30476c?auto=format&fit=crop&w=600&q=80"
+    }
+  ],
+  "occasions": [
+    {
+      "id": "all",
+      "name": "All Celebrations",
+      "icon": "\u2728"
+    },
+    {
+      "id": "birthday",
+      "name": "Birthday",
+      "icon": "\ud83c\udf82"
+    },
+    {
+      "id": "anniversary",
+      "name": "Anniversary",
+      "icon": "\ud83d\udc8d"
+    },
+    {
+      "id": "romantic",
+      "name": "Romantic / Love",
+      "icon": "\u2764\ufe0f"
+    },
+    {
+      "id": "congratulations",
+      "name": "Congratulations",
+      "icon": "\ud83e\udd42"
+    },
+    {
+      "id": "kids",
+      "name": "Kids Special",
+      "icon": "\ud83d\udc76"
+    },
+    {
+      "id": "baby-shower",
+      "name": "Baby Shower",
+      "icon": "\ud83c\udf7c"
+    },
+    {
+      "id": "thank-you",
+      "name": "Thank You",
+      "icon": "\ud83d\udc8c"
+    },
+    {
+      "id": "just-because",
+      "name": "Just Because",
+      "icon": "\ud83c\udf80"
+    }
+  ],
+  "dessert_types": [
+    "Brownies",
+    "Cupcakes",
+    "Jar Cakes",
+    "Pastries",
+    "Cheesecakes",
+    "Chocolates",
+    "Dessert Boxes"
+  ],
+  "kanpur_zones": [
+    {
+      "pincode": "208001",
+      "area": "Civil Lines / Mall Road",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208002",
+      "area": "Swaroop Nagar / Aryanagar",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208012",
+      "area": "Darshan Purwa / Ram Krishna Nagar (Kitchen Hub)",
+      "delivery_time": "Within 60 Mins",
+      "available": true
+    },
+    {
+      "pincode": "208025",
+      "area": "Kakadeo / Geeta Nagar",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208017",
+      "area": "Kalyanpur / IIT Kanpur",
+      "delivery_time": "Within 2-3 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208011",
+      "area": "Kidwai Nagar / Yashoda Nagar",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208006",
+      "area": "Govind Nagar / Ratan Lal Nagar",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208005",
+      "area": "Ashok Nagar / Harsh Nagar",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208027",
+      "area": "Barra / Gujaini",
+      "delivery_time": "Within 2-3 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208015",
+      "area": "Shyam Nagar / Chakeri",
+      "delivery_time": "Within 2-3 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208022",
+      "area": "Panki / Industrial Estate",
+      "delivery_time": "Within 3 Hours",
+      "available": true
+    },
+    {
+      "pincode": "208004",
+      "area": "Kanpur Cantt / Mirpur",
+      "delivery_time": "Within 2 Hours",
+      "available": true
+    }
+  ],
+  "delivery_slots": [
+    {
+      "id": "standard",
+      "name": "Standard Delivery",
+      "time": "Anytime Today (Free)",
+      "price": 0
+    },
+    {
+      "id": "express",
+      "name": "Express 2-Hour Delivery",
+      "time": "Within 120 Minutes",
+      "price": 99
+    },
+    {
+      "id": "fixed",
+      "name": "Fixed Time Slot",
+      "time": "Choose 1-Hour Slot",
+      "price": 49
+    },
+    {
+      "id": "midnight",
+      "name": "Midnight Celebration Delivery",
+      "time": "11:00 PM - 12:00 AM",
+      "price": 199
+    }
+  ],
+  "coupons": [
+    {
+      "code": "FIRSTBITE",
+      "discount_pct": 15,
+      "min_amount": 499,
+      "desc": "15% OFF for first-time sweet lovers"
+    },
+    {
+      "code": "KANPURFREE",
+      "discount_amount": 99,
+      "min_amount": 399,
+      "desc": "Free Express Delivery in Kanpur"
+    },
+    {
+      "code": "SWEET50",
+      "discount_amount": 50,
+      "min_amount": 599,
+      "desc": "Flat \u20b950 OFF on orders above \u20b9599"
+    },
+    {
+      "code": "CELEBRATE100",
+      "discount_amount": 100,
+      "min_amount": 999,
+      "desc": "Flat \u20b9100 OFF on Designer & Tier Cakes"
+    }
+  ]
+}

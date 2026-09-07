@@ -1,0 +1,21 @@
+{
+  "name": "butter-and-bloom",
+  "version": "1.0.0",
+  "description": "Butter & Bloom — Premium Bakery, Cakes & 3D Interactive Web Experience",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m uvicorn main:app --host 0.0.0.0 --port 8000",
+    "dev": "python -m uvicorn main:app --reload",
+    "test": "python -m pytest tests/test_api.py -v"
+  },
+  "keywords": [
+    "bakery",
+    "threejs",
+    "3d-cake",
+    "fastapi",
+    "ecommerce",
+    "cake-customizer"
+  ],
+  "author": "Butter & Bloom",
+  "license": "MIT"
+}
